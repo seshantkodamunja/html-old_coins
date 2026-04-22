@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+</head>
+<body>
+    <div class="container-1">
+        <div class="navbar">
+            <div class ="logO">
+                <img src ="Images/about.jpg" width="600px"  >
+    
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Coins</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>    
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="Images/cart.jpg" width="30px" height="30px"></a>
+            <img src="Images/menu.png" class="menu-icon"
+             onclick="menutoggle()">   
+        </div>
+    </div>   
+
+
+<form style="background-color:rgb(169, 169, 169)" action="//submit.form" id="ContactUs100" method="get" onsubmit="return ValidateForm(this);">
+    <script type="text/javascript">
+    function ValidateForm(frm) {
+    if (frm.Name.value == "") { alert('Name is required.'); frm.Name.focus(); return false; }
+    if (frm.FromEmailAddress.value == "") { alert('Email address is required.'); frm.FromEmailAddress.focus(); return false; }
+    if (frm.FromEmailAddress.value.indexOf("@") < 1 || frm.FromEmailAddress.value.indexOf(".") < 1) { alert('Please enter a valid email address.'); frm.FromEmailAddress.focus(); return false; }
+    if (frm.Comments.value == "") { alert('Please enter comments or questions.'); frm.Comments.focus(); return false; }
+    return true; }
+    </script>
+    <table style="width:100%;max-width:550px;border:0;" cellpadding="8" cellspacing="0">
+    <tr> <td>
+    <label for="Name">Name*:</label>
+    </td> <td>
+    <input name="Name" type="text" maxlength="60" style="width:100%;max-width:250px;" />
+    </td> </tr> <tr> <td>
+    <label for="PhoneNumber">Phone number:</label>
+    </td> <td>
+    <input name="PhoneNumber" type="text" maxlength="43" style="width:100%;max-width:250px;" />
+    </td> </tr> <tr> <td>
+    <label for="FromEmailAddress">Email address*:</label>
+    </td> <td>
+    <input name="FromEmailAddress" type="text" maxlength="90" style="width:100%;max-width:250px;" />
+    </td> </tr> <tr> <td>
+    <label for="Comments">Comments*:</label>
+    </td> <td>
+    <textarea name="Comments" rows="7" cols="40" style="width:100%;max-width:350px;"></textarea>
+    </td> </tr> <tr> <td>
+    </td> <td>
+    <input name="skip_Submit" type="submit" value="Submit" />
+    <input name="skip_Reset" type="reset" value="Reset" />
+    
+
+    
+    </td> </tr>
+    </table>
+    </form>
+
+
+<!--------------------footer------------------>
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download App for Android and IOS device</p>
+                <div class="app-logo">
+                    <img src="Images/Play store.png">
+                </div>
+                <div class="app-logo">
+                    <img src="Images/App store.png">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="Images/sk mart.png">
+                <p>Aiming to give You the Best Products available in the Town</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Instagram</li>
+                    <li>Twitter</li>
+                    <li>YouTube</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2021 - Seshant Kodamunja</p>
+    </div>
+</div>>
